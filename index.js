@@ -19,7 +19,7 @@ app.get("/", function (req, res) {
 });
 
 const parseTime = (req, res, next) => {
-
+// console.log(req.params.date)
     let time = new Date(isNaN(Number(req.params.date))==false ?  Number(req.params.date):req.params.date);
     
     if (time != "Invalid Date") {
